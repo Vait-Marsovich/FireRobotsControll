@@ -25,14 +25,13 @@ void loop() {
   if (client) { //Если клиент подключён
     while (client.connected()) {
       if (Serial.available() > 0) { // Если принимаем по UART
-        char TX = Serial.read(); // Считываем байт( если нужно строку то Serial.ReadStringUntil("\n")
-        client.print(TX); // Шлём по TCP то что приняли по UART
+        char TX = Serial.read();
+        client.print(TX); // 
       }
       if (client.available() > 0) { //Если принимаем по TCP
-        char RX = client.read(); // Считываем сообщение клиента
-        Serial.print(RX);// Шлём в UART
+        char RX = client.read();
+        Serial.print(RX);
       }
     }
   }
-
 }
