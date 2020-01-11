@@ -3,8 +3,8 @@
 #include <ESP8266WebServer.h>
 
 WiFiServer server(750);
-const char* ssid = "FR";
-const char* password =  "12345FR485";
+char* ssid = "FR";
+char* password =  "12345FR485";
 IPAddress apIP(192, 168, 4, 1);
 unsigned char RX;
 
@@ -18,7 +18,7 @@ void setup() {
   Serial.print("Guten tug");
 }
 
-void loop() {
+void loop() 
   //int a = 2;
   //bool x = 0;
   WiFiClient client = server.available();
