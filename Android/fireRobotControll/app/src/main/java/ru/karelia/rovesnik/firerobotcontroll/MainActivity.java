@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         ConnectivityManager cm = (ConnectivityManager)getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo nInfo = cm.getActiveNetworkInfo();
         if (nInfo != null && nInfo.isConnected()) {
-            edtext.setText("ONLINE"); // выводим в текстовом поле
+            edtext.setText("ONLINE");
         }
         else {
             edtext.setText("OFFLINE");

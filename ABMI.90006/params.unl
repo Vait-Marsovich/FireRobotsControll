@@ -1,0 +1,297 @@
+[General]
+MinOpVoltage       = 179
+MaxOpVoltage       = 299
+PreferRadio        = 0
+UseStdConn         = 0
+UsePowerLamp       = 1
+PressureSensorType = NozzleHoneywell
+PressureOffset	= 0
+FlowrateSensorType = None
+ExtButtonsType     = None
+ButtonsType        = None
+ThermoType         = StandardAndNozzle
+Valve1Type         = RemoteModbus
+Valve2Type         = RemoteModbus
+NozzleType         = Standard
+VerticalType       = Standard
+HorizontalType     = Standard
+DetectorType       = Scanner
+DeployerType       = None
+ExternalConnType   = Standard
+RadioType          = None
+IntOverride		   = 0
+TimedQuench	=	0
+IntBaudrate			=	0
+IntParity			= 0
+IntStopbits			= 0
+FlowrateCoeff0     = 0
+FlowrateCoeff1     = 0
+FlowrateCoeff2     = 0
+FlowrateCoeff3     = 0
+FlowrateOffset     = 0
+
+[ExternalConn]
+Addr = 0
+Baudrate = 0
+Reserve1 = 0
+Reserve2 = 0
+Reserve3 = 0
+TestAddrRange1Begin = 0
+TestAddrRange1End = 0  
+TestAddrRange2Begin = 0
+TestAddrRange2End = 0  
+
+[Radio]
+Addr = 0
+PanId = 0
+Channel = 0
+Updated = 0
+Reserve1 = 0
+Reserve2 = 0
+Reserve3 = 0
+Reserve4 = 0
+
+[Valve1]
+ClearFlag 	= 0
+Timeout 	= 0
+DeviceAddr 	= 0 
+MaxAmperage	= 0
+MaxVoltage	= 0
+Amperage	= 0
+BreakThreshold = 0
+MaxAmperage = 0
+AmpSensorOffset = 0
+MaxAmperageTime = 0
+CloseCoord	=	3000
+OpenCoord	=	700
+
+[Valve2]
+DeviceAddr = 6
+
+[Control]
+UseBallistics	=	1
+DefaultPress	=	60
+UseNewCorrection	=	0
+DistStep	=	1
+QuenchSpeed   = 3
+VertStart = 0
+NumberOfProgs = 8
+EditableProgs = 4
+LastProgram   = 1800,    0, 0
+Program1      = 1800,    0, 0
+Program2      = 2400,    0, 0
+Program3      = 3600,    0, 0
+Program4      = 4800,    0, 0
+Program5      = 2400, 2400, 180
+Program6      = 3600, 2400, 180
+Program7      = 4800, 2400, 180
+Program8      = 4800, 4800, 180
+ 
+[Climatics]
+Period		= 1
+TempOn		= -20
+TempOff		= -19
+PwmPeriod	= 4
+PwmDuty		= 100
+AimHumidity	= 10
+
+[Horizontal]
+DeviceAddr = 	1
+PositionGainP    = 24000
+PositionGainD    = 0
+SpeedGainP       = 3000000
+SpeedGainI       = 4000000
+ControlPeriod    = 25
+MaxPositionError = 30
+Gear             = 251
+MinSpeed         = 1
+MaxSpeed         = 10
+CurrentSpeed     = 3
+Refpoint	= 555555555,0
+Accel            = 100
+MaxVoltage       = 160
+MaxAmperage      = 5
+DefaultMinLimit  = 0
+DefaultMaxLimit  = 0
+MinLimit         = 555555555,-10700
+MaxLimit         = 555555555,10700
+EncoderInverse   = 0
+SpeedoInverse    = 0
+DriveReverse     = 0
+MinLimitInverse  = 0
+MaxLimitInverse  = 0
+VerboseMode      = 1
+AmpSensorOffset  = 381
+MaxAmperageTime  = 500
+SwapLimiters	 = 1
+Reserved1        = 0
+Reserved2        = 0
+Reserved3        = 0
+
+[Vertical]
+DeviceAddr = 	1
+PositionGainP    = 24000
+PositionGainD    = 0
+SpeedGainP       = 3000000
+SpeedGainI       = 4000000
+ControlPeriod    = 25
+MaxPositionError = 30
+Gear             = 251
+MinSpeed         = 1
+MaxSpeed         = 10
+CurrentSpeed     = 10
+Refpoint	= 555555555,0
+Accel            = 100
+MaxVoltage       = 160
+MaxAmperage      = 15
+DefaultMinLimit  = 0
+DefaultMaxLimit  = 0
+MinLimit         = 555555555,-10700
+MaxLimit         = 555555555,10700
+EncoderInverse   = 0
+SpeedoInverse    = 1
+DriveReverse     = 0
+VerboseMode      = 1
+AmpSensorOffset  = 382
+MaxAmperageTime  = 500
+Reserved1        = 0
+Reserved2        = 0
+Reserved3        = 0
+SwapLimiters	 = 1
+ActuatorThreshold1  = 0
+ActuatorThreshold2  = 0
+MinLimitInverse  = 0
+MaxLimitInverse  = 0
+
+
+[Nozzle]
+DeviceAddr = 	1
+PositionGainP    = 24000
+PositionGainD    = 0
+SpeedGainP       = 3000000
+SpeedGainI       = 4000000
+ControlPeriod    = 25
+MaxPositionError = 30
+Refpoint	= 555555555,0
+Gear             = 251
+MinSpeed         = 1
+MaxSpeed         = 10
+CurrentSpeed     = 3
+Accel            = 100
+MaxVoltage          = 160
+MaxAmperage         = 5
+DefaultMinLimit     = 0
+DefaultMaxLimit     = 0
+MinLimit            = 555555555,-10700
+MaxLimit            = 555555555,10700
+EncoderInverse      = 0
+SpeedoInverse       = 0
+DriveReverse        = 0
+VerboseMode         = 0
+AmpSensorOffset     = 382
+MaxAmperageTime     = 500
+ActuatorThreshold1  = 0
+ActuatorThreshold2  = 0
+DontZeroCoord       = 0
+DontSetLimits       = 1
+UpdatePosByLimits   = 1
+SwapLimiters	 = 1
+MinLimitInverse		= 0
+MaxLimitInverse		= 0
+Reserved1           = 0
+Reserved2           = 0
+ServoPMWMinWidthUs = 0
+ServoPMWMaxWidthUs = 0
+
+
+[Buttons]
+AngleCorrection		= 0
+DoubleTimeout       = 500
+ValveTimeout        = 1000
+UseTwoValves        = 0
+AllowLimitsSetup    = 1
+LowSpeed            = 4
+HighSpeed           = 10
+NoValveStatus       = 1
+Reserved1           = 0
+Reserved2           = 0
+PowerLampPolicy		=	0
+FaultLampPolicy		=	0
+HorLampPolicy		=	0
+VertLampPolicy		=	0
+DeviceAddr			=	1
+OpenLampPolicy		=	0
+CloseLampPolicy		=	0
+PauseSeek                = 20
+QuenchLength            = 30
+SmokingMode			=	0
+ScanLeft			=	0
+ScanRight			=	0
+ScanUp				=	0
+ScanDown			= 0
+ZeroX 				= 0
+ZeroY			= 0
+ValveTrigger	=	1
+Input1 = 0
+Input2 = 0
+Input3 = 0
+Input4 = 0
+Input5 = 1
+Input6 = 0
+Input7 = 0
+Input8 = 0
+Output1 = 0
+Output2 = 0
+Output3 = 0
+Output4 = 0
+Output5 = 0
+Output6 = 0
+Output7 = 0
+Output8	= 0
+Timewait = 0
+Timequench = 0
+Timemanual = 3
+Distance = 15
+ChurchArray = 0
+DefaultPress	= 60
+MoveZeroXY = 1
+UseBallistics = 0
+Mant0	=	0
+Order0	=	0
+Mant1	=	0
+Order1	=	0
+Mant2	=	0
+Order2	=	0
+Mant3	=	0
+Order3	=	0
+NozzlePos	=	1300		
+IOType		=	1
+QuenchType	=	2
+Analyze		= 	0
+Selftest	=	1
+
+[Deployer]
+DeviceAddr        = 1
+DeployPosMaxDelta = 10
+Point1            = 0, 0, 0, 0,   1000 
+Point2            = 0, 0, 0, 5400, 1000 
+Point3            = 0, 0, 0, 5400, 1000  
+Point4            = 0, 0, 0, 5400, 1000  
+Reserved1         = 0, 0, 0, 0, 0  
+Reserved2         = 0, 0, 0, 0, 0
+
+[Detector]
+DeviceAddr      = 4
+SeekSpeed       = 6
+AdjustSpeed     = 3
+VerticalSeekPos = 3800
+DeltaX          = 0
+DeltaY          = 0
+Inverted        = 0
+Clockwise       = 1
+VerticalFOV     = 0
+HorizontalFOV   = 0
+ToothAddr		= 0
+
+
+
