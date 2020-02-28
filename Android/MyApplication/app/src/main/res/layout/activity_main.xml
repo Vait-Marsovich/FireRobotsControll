@@ -53,7 +53,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintVertical_bias="0.5"
+        android:layout_marginLeft="161dp"
+        android:layout_marginRight="162dp" />
 
     <TextView
         android:id="@+id/fireAddressName"
@@ -91,7 +93,9 @@
         app:layout_constraintBottom_toTopOf="@+id/fireAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="98dp"
+        android:layout_marginRight="100dp" />
 
     <TextView
         android:id="@+id/inetStatus"
@@ -105,5 +109,7 @@
         app:layout_constraintBottom_toTopOf="@+id/connect"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ipDevice" />
+        app:layout_constraintTop_toBottomOf="@+id/ipDevice"
+        android:layout_marginLeft="177dp"
+        android:layout_marginRight="176dp" />
 </android.support.constraint.ConstraintLayout>

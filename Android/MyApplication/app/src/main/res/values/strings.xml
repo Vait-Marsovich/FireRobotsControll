@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">fireRobotControll</string>
+    <string name="app_name">MyApplication</string>
     <string name="controlAddressNameStr">Адрес модуля</string>
     <string name="fireAddressNameStr">Адрес ствола</string>
     <string name="connectStr">Подключиться</string>
