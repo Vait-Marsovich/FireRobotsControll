@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         EditText ip = (EditText) findViewById(R.id.ipDevice);
-        client = new SocketClient(ip.getText().toString(), 3487);
+        client = new SocketClient(ip.getText().toString(), 80);
         client.updater = new ScreenData() {
             @Override
             public void update(Byte a) {
